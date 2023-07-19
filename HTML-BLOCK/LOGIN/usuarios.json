@@ -1,0 +1,14 @@
+{
+  "usuario1": {
+    "contraseña": "contraseña1",
+    "rol": "administrateur"
+  },
+  "usuario2": {
+    "contraseña": "contraseña2",
+    "rol": "partenaire"
+  },
+  "usuario3": {
+    "contraseña": "contraseña3",
+    "rol": "partenaire"
+  }
+}

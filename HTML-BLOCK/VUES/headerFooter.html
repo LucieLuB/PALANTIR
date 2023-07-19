@@ -1,0 +1,111 @@
+<!-------------------------------HEADER---------------------------------------------------->
+<!--CHANGER LES LINKS SI ON EXPORTE-->
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucie Belleudy">
+    <meta name="description" content="Aplicacion de listas de prospectos">
+    <!--LINK FAVICON-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="headerFooter.css">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+
+    <!--FONTS-->
+    <title>HEADER ET FOOTER</title>
+</head>
+
+
+
+
+
+
+
+<!--HAY QUE RETOCAR EL HEADER POR EL INTENTO DE DROPDOWN MENU Y TAMBIEN EL CSS-->
+
+
+
+
+<header class="container-fluid header">
+    <div class="container-sm divHeader">
+        <img class="logo" src="../img/logo-palantir.png" alt="logo-palantir">
+        <a class="aHeader" href="../INDEX/homePage.html">
+            <h1 class="h1Header"> Palantir</h1>
+        </a>
+        <ul class="ulHeader">
+            <li class="liHeader"><i class="fa-solid fa-bars"></i><a class="aHeader"
+                    href="../LISTE/listePage.php">Liste</a>
+            </li>
+
+
+
+            <li class="liHeader">
+                <i class="fa-solid fa-user"></i>
+                <a class="aHeader" href="../PROFIL/profilPage.html">Profil</a>
+                <ul class="submenu">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 1</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<!-------------------------------FOOTER----------------------------------------------------------->
+
+<footer class="container-fluid footer">
+    <div class="container-sm divFooter">
+        <div class="divFooterItems1">
+            <a href="../INDEX/homePage.html" class="aFooter">
+                <img class="logo" src="../img/logo-palantir.png" alt="logo-palantir">
+                <h2 class="h2Footer">Palantir</h2>
+            </a>
+            <p class="pFooter">Download the app by clicking the link below</p>
+            <p class="pFooter"><button class="buttonFooter">Google Play</button> <button class="buttonFooter">App
+                    Store</button></p>
+        </div>
+        <div class="divFooterItems2">
+            <div class="divFooterContent2">
+                <h3 class="h3Footer">Pages</h3>
+                <ul class="ulFooter">
+                    <li class="liFooter"><a class="aFooter" href="../LISTE/listePage.php">Listes</a></li>
+                    <li class="liFooter"><a class="aFooter" href="../PROFIL/profilPage.html"> Profil</a></li>
+                    <li class="liFooter"><a class="aFooter" href="../INDEX/homePage.html"> Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="divFooterItems">
+            <h3 class="h3Footer">Service</h3>
+            <ul class="ulFooter">
+                <li class="liFooter"><a class="aFooter" href="https://studio60.ch/" target="_blank"> The Studio
+                        60</a></li>
+                <li class="liFooter"><a class="aFooter" href="../INDEX/homePage.html"> Palantir </a></li>
+            </ul>
+        </div>
+        <div class="divFooterItems">
+            <h3 class="h3Footer">Contact</h3>
+            <ul class="ulFooter">
+                <li class="liFooter"><i class="fa-solid fa-phone iFooter" style="margin: 0;"></i><a class="aFooter"
+                        href="tel:+41435433345"> +41 43
+                        543 33 45 </a></li>
+                <li class="liFooter"><i class="fa-solid fa-envelope iFooter" style="margin: 0;"></i><a class="aFooter"
+                        href="mailto:thestudio60@gmail.com"> thestudio60@gmail.com </a></li>
+                <li class="liFooter"><i class="fa-solid fa-location-dot iFooter" style="margin: 0;"></i> Boulevard
+                    de Grancy
+                    29<br>1006
+                    Laussane</li>
+            </ul>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,127 @@
+/***************************************
+                VARIABLES
+***************************************/
+
+:root {
+    --color-primary: #214177;
+    --color-secondary: #3667A6;
+    --color-tertiary: #82A6CB;
+    --color-four: #BDD8F1;
+}
+
+/***************************************
+                FONTS JK ADOBE
+***************************************/
+
+@font-face {
+    font-family: 'JK Adobe';
+    src: url('/fonts/JKAbode-Demo.ttf');
+}
+
+
+/***************************************
+                CONTENIDO
+***************************************/
+.body-login {
+    background-image: url(../img/background-img-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login { padding: 10rem 30px; }
+
+.loginH1 {
+    font-family: 'JK Adobe';
+    font-size: 4.5rem;
+    color: var(--color-tertiary);
+    margin-bottom: 4rem;
+}
+
+.loginUl { padding-left: 0; }
+
+.loginLi { list-style: none; }
+
+.loginInput {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.loginInput:focus { background-color:var(--color-four); }
+
+.loginButton input {
+    background-color: var(--color-tertiary);
+    font-size: 1.2rem;
+    font-family: 'JK Adobe';
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    padding: 15px ;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    box-shadow: 5px 5px 20px black;
+    transition: transform 0.3s ease;
+}
+
+.loginButton input:hover {
+    background-color: var(--color-secondary);
+    color: white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+.error {
+    color: red;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+
+
+@media (min-width:576px) {
+    .body-login{ 
+        padding-left: 50px;
+        padding-right: 50px; 
+    }
+
+    .loginH1 {
+        font-size: 4.8rem;
+    }
+}
+
+@media (min-width:768px) {
+    .body-login{ 
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (min-width:992px) {
+    .body-login{ 
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    .loginH1 {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .body-login{ 
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+}
+
+@media (min-width:1400px) {
+    .body-login{ 
+        padding-left: 420px;
+        padding-right: 420px;
+    }
+}

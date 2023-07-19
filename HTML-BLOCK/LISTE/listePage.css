@@ -1,0 +1,288 @@
+/***************************************
+                VARIABLES
+***************************************/
+
+:root {
+    --color-primary: #214177;
+    --color-secondary: #3667A6;
+    --color-tertiary: #82A6CB;
+    --color-four: #BDD8F1;
+}
+
+/***************************************
+                FONTS JK ADOBE
+***************************************/
+
+@font-face {
+    font-family: 'JK Adobe';
+    src: url('/fonts/JKAbode-Demo.ttf');
+}
+
+
+/***************************************
+                BODY
+***************************************/
+
+.body-liste { background-image: url(../img/background-img-login.png); }
+
+
+/***************************************
+            BIENVENUE
+***************************************/
+
+.bienvenue {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bienvenueA {
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.bienvenueA:hover {
+    background-color: var(--color-tertiary);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+.bienvenueA a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (min-width:576px) {
+    .bienvenue { color: var(--color-tertiary); }
+}
+
+
+/***************************************
+    BUTTONS CATEGORIES RECHERCHES
+***************************************/
+
+.listePage {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.listePageButton {
+    margin-bottom: 10px; 
+    border-color: var(--color-tertiary);
+    background-color: white;
+}
+
+.listePageButton:hover { background-color: var(--color-four); }
+
+.listePageUl { background-color: var(--color-primary); }
+
+.listePageLi .dropdown-item:hover { background-color: var(--color-tertiary); }
+
+.listePageButtonSearch {
+    background-color: var(--color-tertiary);
+    font-size: 1.2rem;
+    font-family: 'JK Adobe';
+    font-weight: bold;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    width: 65%;
+    box-shadow: 5px 5px 20px black;
+    transition: transform 0.3s ease;
+}
+
+.listePageButtonSearch:hover {
+    background-color: var(--color-secondary);
+    color: white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+
+@media (min-width:576px) {
+    .listePageButtonSearch { width: 90%; }
+}
+
+@media (min-width:992px) {
+    .listePageButtonSearch { width: 70%; }
+}
+
+@media (min-width:1200px) {
+    .listePageButtonSearch { width: 60%; }
+}
+
+@media (min-width:1400px) {
+    .listePageButtonSearch { width: 50%; }
+}
+
+/***************************************
+               TITRE PRINCIPAL
+***************************************/
+
+.listeH1 {
+    text-align: center;
+    color: white;
+}
+
+#show-div {
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#show-div:hover {
+    color: var(--color-tertiary);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+@media (min-width:768px) {
+    .listeH1, #show-div { color: var(--color-tertiary); }
+
+    #show-div:hover { color: var(--color-secondary); }
+}
+
+
+/***************************************
+               DIV CACHÉ
+***************************************/
+.hidden-div {
+    display: none;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px;
+    text-align: center;
+    padding: 30px 20px 20px 20px;
+}
+
+.hidden-divSpan {
+    background-color: rgb(216, 216, 216);
+    box-shadow: 5px 5px 20px;
+    border-radius: 50px;
+    padding: 10px 100px;
+}
+
+.formFiltres { margin-top: 40px; }
+
+.formFiltres label { font-weight: bold; }
+
+.formFiltres option {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.formFiltres select {
+    padding: 6px;
+    border-color: var(--color-tertiary);
+    border-radius: 5px;
+}
+
+.formFiltres select:hover {
+    background-color: var(--color-tertiary);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+}
+
+@media (min-width:768px) {
+    .formFiltres {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: right;
+    }
+
+    .hidden-divSpan { padding: 10px 190px; }
+}
+
+@media (min-width:992px) {
+    .formFiltres { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+@media (min-width:1200px) {
+    .formFiltres { grid-template-columns: 1fr 1fr 1fr 1fr; }
+}
+
+/***************************************
+               DIVs PROSPECTS
+***************************************/
+.prospect {
+    background-color: white;
+    border-radius: 50px 50px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 10px 10px 20px;
+    margin-bottom: 20px;
+}
+
+.prospectImg {
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px;
+}
+
+.prospectH2 {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.prospectA { color: var(--color-primary); }
+
+.prospectA:hover {
+    color: var(--color-tertiary);
+    font-size: 1.2rem;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+}
+
+.prospectB {
+    background-color: var(--color-tertiary);
+    font-size: 1.2rem;
+    font-family: 'JK Adobe';
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px black;
+    transition: transform 0.3s ease;
+}
+
+.prospectB:hover {
+    background-color: var(--color-secondary);
+    color: white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+@media (min-width:768px) {
+    .divsProspect {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:992px) {
+    .divsProspect { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+@media (min-width:1200px) {
+    .divsProspect { grid-template-columns: 1fr 1fr 1fr 1fr; }
+}
+

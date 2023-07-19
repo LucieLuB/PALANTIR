@@ -1,0 +1,203 @@
+/***************************************
+                VARIABLES
+***************************************/
+
+:root {
+    --color-primary: #214177;
+    --color-secondary: #3667A6;
+    --color-tertiary: #82A6CB;
+    --color-four: #BDD8F1;
+}
+
+/***************************************
+                FONTS JK ADOBE
+***************************************/
+
+@font-face {
+    font-family: 'JK Adobe';
+    src: url('/fonts/JKAbode-Demo.ttf');
+}
+
+/***************************************
+                BODY
+***************************************/
+
+.body-profil { background-image: url(../img/background-img-login.png); }
+
+
+/***************************************
+            BIENVENUE
+***************************************/
+
+.bienvenue {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bienvenueA {
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.bienvenueA:hover {
+    background-color: var(--color-tertiary);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+.bienvenueA a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (min-width:576px) {
+    .bienvenue { color: var(--color-tertiary); }
+}
+
+
+/***************************************
+                DIV PROFIL
+***************************************/
+.profil {
+    background-color: white;
+    border-radius: 50px 50px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 10px 10px 20px;
+    margin-bottom: 20px;
+}
+
+.profilH2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.profilSpan {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.profilP a { color: var(--color-primary); }
+
+.profilButton {
+    background-color: var(--color-tertiary);
+    border: none;
+    width: 80%;
+    font-size: 1.2rem;
+    font-family: 'JK Adobe';
+    font-weight: bold;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    box-shadow: 5px 5px 20px black;
+    transition: transform 0.3s ease;
+}
+
+.profilButton:hover {
+    background-color: var(--color-secondary);
+    color: white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+.profilContent { display: none; }
+
+#content1 { display: block; }
+
+.divsButtonProfil {
+    background-color: var(--color-primary);
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+    width: 90%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsProfil {
+    background-color: white;
+    border: none;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 20px black;
+}
+
+.buttonsProfil:hover {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+    background-color: var(--color-four);
+}
+
+.buttonsProfil:focus {
+    background-color: var(--color-tertiary);
+    color: white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+}
+
+.profilListe {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.profilListe > * { margin-right: 10px; }
+
+.profilListeH3 { font-size: 0.9rem; }
+
+.profilListeP { font-size:0.8rem }
+
+.profilListeButton {
+    margin-right: 0;
+    font-size: 0.6rem;
+    border: none;background-color: var(--color-primary);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 5px 5px 20px black;
+}
+
+.profilListeButton:hover {
+    background-color: var(--color-secondary);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+@media (min-width:576px) {
+   .divsButtonProfil { width: 80%; }
+}
+
+@media (min-width:768px) {
+    .profil { width: 80%; }
+}

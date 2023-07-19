@@ -1,0 +1,550 @@
+/***************************************
+                VARIABLES
+***************************************/
+
+:root {
+    --color-primary: #214177;
+    --color-secondary: #3667A6;
+    --color-tertiary: #82A6CB;
+    --color-four: #BDD8F1;
+}
+
+/***************************************
+                FONTS JK ADOBE
+***************************************/
+
+@font-face {
+    font-family: 'JK Adobe';
+    src: url('/fonts/JKAbode-Demo.ttf');
+}
+
+/***************************************
+                BODY
+***************************************/
+
+.body-administrateur { background-image: url(../img/background-img-login.png); }
+
+/***************************************
+                TEST HEADER
+***************************************/
+
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    background-color: var(--color-four);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    list-style: none;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%); 
+}
+
+.dropdownMenu li a {
+    text-decoration: none;
+    color:var(--color-primary);
+}
+
+.dropdownMenu li:hover { background-color: white; }
+
+.dropdownMenu li a:hover { color: var(--color-primary); }
+
+.liHeader { position: relative; }
+
+.liHeader:hover .dropdownMenu { display: block; }
+
+
+/***************************************
+            BIENVENUE
+***************************************/
+
+.bienvenue {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bienvenueA {
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.bienvenueA:hover {
+    background-color: var(--color-tertiary);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+.bienvenueA a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (min-width:576px) {
+    .bienvenue { color: var(--color-tertiary); }
+}
+
+
+/***************************************
+                LISTES PROSPECTS
+***************************************/
+
+.administrateurH1 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media (min-width:768px) {
+    .administrateurH1 { color: var(--color-secondary); }
+}
+
+.listesProspects {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px;
+    padding: 20px;
+}
+
+.listesProspects h2 { margin-bottom: 30px; }
+
+.listesProspects ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.listesProspects ul li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listesProspects ul button { border: none; }
+
+.listesProspects ul button:hover {
+    background-color: var(--color-secondary);
+    color: white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+.creerListeButton {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    width: 90%;
+}
+
+.creerListeButton:hover {
+    background-color: var(--color-secondary);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+
+/**********************************************************************************
+LISTES PROSPECTS / GESTIONS PROSPECTS / GESTION CATEGORIES / GESTION UTILISATEURS
+************************************************************************************/
+
+.formProspect, 
+.formListeProspect, 
+.formCategories,
+.formUtilisateurs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputProspect, 
+.inputListeProspect, 
+.inputCategorie,
+.inputUtilisateur {
+    margin-bottom: 10px;
+}
+
+.inputUtilisateur { width: 100%; }
+
+.ajouterProspect, 
+.ajouterListeProspect,
+.ajouterCategorie,
+.ajouterUtilisateur {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 90%;
+    box-shadow: 5px 5px 10px black;  
+}
+
+.ajouterProspect:hover, 
+.editerProspect:hover, 
+.eliminerProspect:hover, 
+.ajouterListeProspect:hover,
+.editerListeProspect:hover,
+.eliminerListeProspect:hover,
+.ajouterCategorie:hover,
+.editerCategorie:hover,
+.eliminerCategorie:hover,
+.ajouterUtilisateur:hover,
+.editerUtilisateur:hover,
+.eliminerUtilisateur:hover {
+    background-color: var(--color-secondary);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+
+@media (max-width:768px){
+    .gestionProspectsTable, 
+    .gestionListeProspectsTable,
+    .gestionCategoriesTable {
+      display: block;
+      overflow: auto;
+    }
+  
+    .gestionProspectsTable thead,
+    .gestionProspectsTable tbody,
+    .gestionProspectsTable tr,
+    .gestionProspectsTable th,
+    .gestionProspectsTable td, 
+    .gestionListeProspectsTable thead,
+    .gestionListeProspectsTable tbody,
+    .gestionListeProspectsTable tr, 
+    .gestionListeProspectsTable th,
+    .gestionListeProspectsTable td,
+    .gestionCategoriesTable thead,
+    .gestionCategoriesTable tbody,
+    .gestionCategoriesTable tr,
+    .gestionCategoriesTable th,
+    .gestionCategoriesTable td
+     {
+      display: block;
+    }
+    
+    .gestionProspectsTable thead tr, 
+    .gestionListeProspectsTable thead tr,
+    .gestionCategoriesTable thead tr
+     {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    .gestionProspectsTable tbody tr, 
+    .gestionListeProspectsTable tbody tr,
+    .gestionCategoriesTable tbody tr
+     {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+  
+    .gestionProspectsTable td, 
+    .gestionListeProspectsTable td,
+    .gestionCategoriesTable td
+     {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+  
+    .gestionProspectsTable td:before, 
+    .gestionListeProspectsTable td:before,
+    .gestionCategoriesTable td:before
+     {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      white-space: nowrap;
+    }
+  
+    .gestionProspectsTable td:nth-of-type(1):before, 
+    .gestionListeProspectsTable td:nth-of-type(1):before
+     {
+      content: 'Nom:';
+      font-weight: bold;
+    }
+
+    .gestionCategoriesTable td:nth-of-type(1):before
+     {
+        content: 'Catégorie:';
+        font-weight: bold;
+    }
+
+    .gestionProspectsTable td:nth-of-type(2):before
+     {
+      content: 'Email:';
+      font-weight: bold;
+    }
+
+     .gestionListeProspectsTable td:nth-of-type(2):before {
+        content: 'Description:';
+        font-weight: bold;
+      }
+
+      .gestionCategoriesTable td:nth-of-type(2):before {
+        content: 'Listes:';
+        font-weight: bold;
+      }
+
+      .gestionProspectsTable td:nth-of-type(3):before {
+        content: 'Téléphone:';
+        font-weight: bold;
+      } 
+
+    .gestionListeProspectsTable td:nth-of-type(3):before {
+      content: 'Création:';
+      font-weight: bold;
+    }
+
+    .gestionProspectsTable td:nth-of-type(4):before, 
+    .gestionListeProspectsTable td:nth-of-type(4):before,
+    .gestionCategoriesTable td:nth-of-type(3):before
+     {
+      content: 'Actions:';
+      font-weight: bold;
+    }
+  
+    .gestionProspectsTable td,
+    .gestionListeProspectsTable td,
+    .gestionCategoriesTable td
+     {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    .editerProspect,
+    .editerListeProspect,
+    .editerCategorie
+     {
+    margin-bottom: 10px;    
+    }
+  }
+
+  @media (min-width:778px) {
+     .editerListeProspect { margin-bottom: 10px; }
+
+    .gestionProspectsTable, 
+    .gestionListeProspectsTable,
+    .gestionCategoriesTable
+     {
+        margin: 0 auto;
+     }
+
+    .gestionProspectsTable thead th, 
+    .gestionProspectsTable tbody td,
+    .gestionListeProspectsTable th,
+    .gestionListeProspectsTable td,
+    .gestionCategoriesTable th,
+    .gestionCategoriesTable td
+     {
+        padding: 10px 15px;
+     }
+
+}
+
+.editerProspect, 
+.eliminerProspect,
+.editerListeProspect,
+.eliminerListeProspect,
+.editerCategorie,
+.eliminerCategorie, 
+.editerUtilisateur,
+.eliminerUtilisateur {
+    border: none;
+}
+
+.editerProspect:hover, 
+.eliminerProspect:hover,
+.editerListeProspect:hover,
+.eliminerListeProspect:hover,
+.editerCategorie:hover,
+.eliminerCategorie:hover,
+.editerUtilisateur:hover,
+.eliminerUtilisateur:hover {
+    color: white;
+}
+
+.gestionProspects th,
+.gestionProspects td,
+.listesProspects th,
+.listesProspects td,
+.categories th,
+.categories td
+{
+    border-bottom: 1px solid #ccc;
+}
+
+.gestionProspectsH2, 
+.listesProspects h2,
+.categoriesH2,
+.utilisateursH2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/***************************************
+                GESTION PROSPECTS
+***************************************/
+
+.gestionProspects, 
+.categories, 
+.utilisateurs {
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 10px 10px 20px;
+}
+
+
+/***************************************
+                GESTION UTILISATEURS
+***************************************/
+
+@media (max-width:1200px){
+    .gestionUtilisateursTable {
+        display: block;
+        overflow: auto;
+    }
+
+    .gestionUtilisateursTable thead,
+    .gestionUtilisateursTable tbody,
+    .gestionUtilisateursTable tr,
+    .gestionUtilisateursTable th,
+    .gestionUtilisateursTable td {
+        display: block;
+    }
+
+    .gestionUtilisateursTable thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .gestionUtilisateursTable tbody tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    .gestionUtilisateursTable td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .gestionUtilisateursTable td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        white-space: nowrap;
+    }
+
+    .gestionUtilisateursTable td:nth-of-type(1):before {
+        content: 'Catégorie:';
+        font-weight: bold;
+    }
+
+    .gestionUtilisateursTable td:nth-of-type(2):before {
+        content: 'Nom:';
+      font-weight: bold;
+    }
+
+    .gestionUtilisateursTable td:nth-of-type(3):before {
+        content: 'Username:';
+        font-weight: bold;
+    }
+
+    .gestionUtilisateursTable td:nth-of-type(4):before {
+        content: 'Password:';
+        font-weight: bold;
+    }
+
+    .gestionUtilisateursTable td:nth-of-type(5):before {
+        content: 'Email:';
+        font-weight: bold;
+    }
+
+    .gestionUtilisateursTable td:nth-of-type(6):before {
+        content: 'Site web:';
+        font-weight: bold;
+    }
+
+    .gestionUtilisateursTable td:nth-of-type(7):before {
+        content: 'Actions:';
+        font-weight: bold;
+    }
+
+    .gestionUtilisateursTable td {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width:1200px) {
+    .editerUtilisateur, 
+    .eliminerUtilisateur {
+        margin-bottom: 10px;   
+    }
+
+    .editerUtilisateur { margin-top: 10px; }
+}
+
+.utilisateurs th,
+.utilisateurs td {
+    border-bottom: 1px solid #ccc;
+}
+
+
+/*
+@media (min-width:576px) {
+    .body-administrateur { background-color: red; }
+}
+
+@media (min-width:768px) {
+    .body-administrateur { background-color: green; }
+}
+
+@media (min-width:992px) {
+    .body-administrateur { background-color: yellow; }
+}
+
+@media (min-width:1200px) {
+    .body-administrateur { background-color: aqua; }
+}
+
+@media (min-width:1400px) {
+    .body-administrateur { background-color: fuchsia; }
+}*/
